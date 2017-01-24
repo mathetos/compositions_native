@@ -1,0 +1,15 @@
+.compositions_metabox_div {
+    margin: 15px 0 15px 15px;
+    display: inline-block;
+    width: 45%;
+}
+
+.compositions_metabox_div label {
+    min-width: 20%;
+    margin-right: 25px;
+    display: inline-block;
+}
+
+.compositions_metabox_div input {
+    min-width: 35%;
+}
