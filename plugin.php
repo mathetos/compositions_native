@@ -36,7 +36,6 @@ function compositions_load_textdomain() {
     load_plugin_textdomain( 'compositions', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
 }
 
-
 /**
  * Register CPT
  */
@@ -55,5 +54,8 @@ if ( file_exists(  COMPOSITIONS_NATIVE_DIR . '/inc/add_meta_fields.php' ) )
 if ( file_exists(  COMPOSITIONS_NATIVE_DIR . '/inc/add_meta_to_post.php' ) )
     require_once  COMPOSITIONS_NATIVE_DIR . '/inc/add_meta_to_post.php';
 
-
-
+/**
+ * Enqueue Admin Assets
+ */
+if ( file_exists(  COMPOSITIONS_NATIVE_DIR . '/assets/enqueue-assets.php' ) )
+    require_once  COMPOSITIONS_NATIVE_DIR . '/assets/enqueue-assets.php';

@@ -5,11 +5,23 @@
 }
 
 .compositions_metabox_div label {
-    min-width: 20%;
-    margin-right: 25px;
-    display: inline-block;
+    display: block;
+    font-weight: 700;
+    line-height: 1.8em;
+    font-size: 1.1em;
 }
 
 .compositions_metabox_div input {
     min-width: 35%;
+}
+
+.compositions_metabox_div.wide {
+    display: block;
+    width: 100%;
+}
+
+.compositions_metabox_div.wide label {
+    min-width: 100%;
+    margin-right: 0;
+    display: block;
 }
